@@ -1,0 +1,281 @@
+
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+#body {
+    overflow-x: hidden;
+}
+@media(min-width:768px) {
+	body{
+		padding-top: 0px;
+    background: #f1f1f1;
+    height: 100%;
+	}
+ }
+
+/* TOGGLE STYLES */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	background: #f1f1f1;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+	background: #f1f1f1;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* SIDERBAR STYLES */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.sidebar-nav li {
+    text-indent: 40px;	<-------- Distance between Sidebar text and edge of screen
+    line-height: 23px;	<-------- Distance between Sidebar text
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #777777;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #000;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 30px;		 <-------- height of charts text
+    font-size: 18px;
+    line-height: 100px;  <-------- height of header text
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #282828;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color:
+    background:
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 10px;
+		padding-right: 10px;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/* HEADER */
+
+	#header{}
+
+	#header .navbar {
+		min-height: 55px;
+		margin-bottom: 0;
+		border-radius: 0;
+		text-indent: 40px;	<-------- Indent of navbar text
+		position: absolute;
+		display: inline-block;
+	}
+
+	.st-navbar{
+		background-color: #fff;
+		border-bottom: 1px solid #f0f0f0;
+	}
+
+	.st-navbar ul{
+		margin-top: 11px;
+	}
+
+	.st-navbar ul li a{
+		text-transform: uppercase;
+		font-weight: 600;
+		padding: 0;
+		margin: 14px;
+	}
+
+	.st-navbar ul li a:hover,
+	.st-navbar ul li a:focus {
+		background-color: transparent;
+		color: #000;
+	}
+
+	.st-navbar .navbar-header{
+		margin-top: 14px;
+		margin-bottom: 0px;
+	}
+
+	.st-navbar .navbar-toggle .icon-bar {
+		background-color: #000;
+	}
+
+	.st-navbar .navbar-toggle{
+		margin-top: 20px;
+		margin-right: 25px;
+		padding: 0;
+		border-radius: 0;
+	}
+
+
+/* A LINKS */
+
+	a {
+		color: #eb646b;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #eb646b;
+		text-decoration: none;
+	}
+
+	a:active{
+		color: #eb646b;
+		text-decoration: none;
+	}
+
+	a:visited {
+		color: #eb646b;
+	}
+
+/* B */
+
+	b {
+		color: #de4744;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #eb646b;
+		text-decoration: none;
+	}
+
+	a:active{
+		color: #eb646b;
+		text-decoration: none;
+	}
+
+	a:visited {
+		color: #eb646b;
+	}
+
+/* BUTTONS */
+
+	.btn-send{
+		background-color: #383838;
+		border-radius: 0;
+		border: 0;
+		color: #fff;
+		padding: 8px 14px;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.btn-send:hover{
+		background-color: #000;
+		color: #fff;
+	}
+
+
+	#pricing{
+		background-color: #f5f5f5;
+		padding-top: 130px;
+		padding-bottom: 120px;
+	}
+
+	.st-pricing{
+		background-color: #fff;
+		padding: 40px;
+		margin-top: 30px;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.st-pricing:hover{
+		box-shadow: 0px 0px 18px #ddd;
+}
+
+	.glyphicon {
+		color: #eb646b;
+	}

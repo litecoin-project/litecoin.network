@@ -1,0 +1,33 @@
+{
+  "name": "litecoin.network",
+  "version": "1.0.0",
+  "description": "Front/backend for litecoin.network",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/litecoin-project/litecoin.network.git"
+  },
+  "contributors": [
+    {
+      "name": "Loshan T",
+      "email": "loshan1212@gmail.com"
+    }
+  ],
+  "keywords": [
+    "litecoin",
+    "network",
+    "statistics"
+  ],
+  "author": "losh11",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/litecoin-project/litecoin.network/issues"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "morgan": "^1.8.1",
+    "nib": "^1.1.2",
+    "pug": "^2.0.0-beta.12",
+    "stylus": "^0.54.5"
+  }
+}

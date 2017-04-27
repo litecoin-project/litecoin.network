@@ -1,0 +1,126 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, shrink-to-fit=no, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Litecoin.Network
+    link(rel='shortcut icon', href='/images/favicon.png')
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/css/simple-sidebar.css', rel='stylesheet')
+  body
+    #page-content-wrapper
+      header#header
+        nav.navbar.st-navbar.navbar-fixed-top
+          .navbar-header
+            li
+              a#menu-toggle(href='#menu-toggle')
+                img(src='/images/menu.png', style='height:13px;')
+              img(src='/images/logo5.png', align='center', style='height:25px;')
+    #wrapper
+      // Sidebar
+      #sidebar-wrapper
+        ul.sidebar-nav
+          li.sidebar-brand
+            p
+          li
+            p
+              b Network Statistics
+          li
+            font(size='2')
+              a(href='#') Litecoins in Circulation
+            font(size='2')
+              a(href='#') Orphan Block Count
+            font(size='2')
+              a(href='#') Transaction Count
+            font(size='2')
+              a(href='#') Unique Addresses
+            font(size='2')
+              a(href='#') Blockchain Size
+            font(size='2')
+              a(href='#') Mempool Size
+            font(size='2')
+              a(href='#') UXTO Count
+            font(size='2')
+              a(href='#') Block Count
+            font(size='2')
+              a(href='#') Node Count
+            font(size='2')
+              a(href='#') Node Map
+          hr
+          li
+            p
+              b Economics
+          li
+            font(size='2')
+              a(href='#') Exchange Volumes ($USD)
+            font(size='2')
+              a(href='#') Market Price ($USD)
+            font(size='2')
+              a(href='#') Market Cap ($USD)
+            font(size='2')
+              a(href='#') Block Reward
+          hr
+          li
+            p
+              b Mining
+          li
+            font(size='2')
+              a(href='#') Avg Transaction Value
+            font(size='2')
+              a(href='#') Hashrate Distribution
+            font(size='2')
+              a(href='#') Avg Transaction Fee
+            font(size='2')
+              a(href='#') Network Hashrate
+            font(size='2')
+              a(href='#') Network Difficulty
+            font(size='2')
+              a(href='#') Active Softforks
+            font(size='2')
+              a(href='#') Segwit Support
+            font(size='2')
+              a(href='#') Block Times
+            font(size='2')
+              a(href='#') Block Size
+          hr
+          li
+            font(size='1')
+              b A Project by:
+            a(href='https://www.litecoinassociation.org')
+              img(src='/images/la-logo.png', style='height:18px;')
+            br
+            br
+      // /#sidebar-wrapper
+      // Page Content
+      .container-fluid
+        .row
+          .col-lg-12
+            br
+            .col-lg-12
+              .st-pricing
+                p
+            .col-lg-6
+              .st-pricing
+                p
+            .col-lg-6
+              .st-pricing
+                p
+            .col-lg-4
+              .st-pricing
+                p
+            .col-lg-4
+              .st-pricing
+                p
+            .col-lg-4
+              .st-pricing
+                p
+    script(src='/js/jquery.js')
+    script(src='/js/bootstrap.min.js')
+    script.
+      $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+      });
