@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Litecoin.Network</title>
-	
+
 	<link rel="shortcut icon" href="images/favicon.png">
 
     <!-- Bootstrap Core CSS -->
@@ -29,74 +29,86 @@
 </head>
 
 <body>
-	
+
 			<div id="page-content-wrapper">
 				<header id="header">
 					<nav class="navbar st-navbar navbar-fixed-top">
 						<div class="navbar-header">
-							<li>
-								<a href="#menu-toggle" id="menu-toggle"><img src="images/menu.png" style="height:13px;">
-								<img src="images/logo5.png" align="center" style="height:25px;"></a>
-							</li>
-						</div>	
+                <p><a href="#menu-toggle" id="menu-toggle"><img src="images/menu.png" style="height:13px;">
+								<img src="images/logo5.png" align="center" style="height:25px;"></a></p>
+					   </div>
 					</nav>
 				</header>
 			</div>
-	
-    <div id="wrapper">
-		
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav"> 
-                <li>
-					<h1>Network Statistics</h1>
-					<a href="#">Litecoins in Circulation</a>
-					<a href="#">Orphan Block Count</a>
-					<a href="#">Transaction Count</a>
-					<a href="#">Unique Addresses</a>
-					<a href="#">Blockchain Size</a>
-					<a href="#">Mempool Size</a>           
-					<a href="#">UXTO Count</a>
-					<a href="#">Block Count</a>				
-					<a href="#">Node Count</a>
-					<a href="#">Node Map</a> 
-				</li>
-				<hr>
-				<li>					
-					<h1>Economics</h1>				
-               		<a href="#">Excahnge Volumes ($USD)</a>
-					<a href="#">Market Price ($USD)</a>
-					<a href="#">Market Cap ($USD)</a>
-					<a href="#">Block Reward</a>
-				</li>
-				<hr>
-				<li>
-					<h1>Mining</h1>					
-					<a href="#">Avg Transaction Value</a>
-					<a href="#">Hashrate Distribution</a>
-					<a href="#">Avg Transaction Fee</a>
-					<a href="#">Network Hashrate</a>
-					<a href="#">Network Difficulty</a>
-					<a href="#">Active Softforks</a>
-					<a href="#">Segwit Support</a>
-					<a href="#">Block Times</a>
-					<a href="#">Block Size</a>
-				</li>
-				<hr>
-				<li>
-					<h2>A Project by:</h2>
-                </li>
-			</ul>
-		</div>
-        <!-- /#sidebar-wrapper -->
 
-        <!-- Page Content -->
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li>
+					  <h1>Network Statistics</h1>
+					  <a href="#">Orphan Block Count</a>
+					  <a href="#">Transaction Count</a>
+					  <a href="#">Unique Addresses</a>
+					  <a href="#">Blockchain Size</a>
+					  <a href="#">Mempool Size</a>
+					  <a href="#">UXTO Count</a>
+					  <a href="#">Node Count</a>
+            <a href="#">Node agent distribution</a>
+            <a href="#">Mempool Size</a>
+					  <a href="#">Node Map</a>
+            <a href="#">UXTO</a>
+			  	</li>
+				  <hr>
+				  <li>
+					  <h1>Economics</h1>
+            <a href="#">Litecoins in Circulation</a>
+            <a href="#">Excahnge Volumes ($USD)</a>
+					  <a href="#">Market Price ($USD)</a>
+            <a href="#">Avg Transaction Value</a>
+            <a href="#">Avg Transaction Fee</a>
+					  <a href="#">Market Cap ($USD)</a>
+				  	<a href="#">Block Reward</a>
+            <a href="#">Block Value ($USD)</a>
+            <a href="#">Coins mined daily ($USD)</a>
+            <a href="#">Inflation Rate</a>
+				  </li>
+				  <hr>
+				  <li>
+					  <h1>Mining</h1>
+            <a href="#">Block Count</a>
+            <a href="#">Blocks until halving</a>
+            <a href="#">Coins to be mined</a>
+					  <a href="#">Hashrate Distribution</a>
+					  <a href="#">Network Hashrate</a>
+					  <a href="#">Network Difficulty</a>
+					  <a href="#">Segwit Support</a>
+					  <a href="#">Avg Block Times</a>
+					  <a href="#">Avg Block Size</a>
+			  	</li>
+          <hr>
+				  <li>
+					  <h1>Development</h1>
+        	  <a href="#">Active Softforks</a>
+				  	</li>
+				  <hr>
+			  	<li>
+				    <h2>Made with ❤ by</h2>
+            <a href="http://twitter.com/mlpfrank">Franklyn</a>
+            <a href="https://twitter.com/l0sh11">Loshan</a>
+          </li>
+    	  </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
 			<div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-12">
 						<div class="col-lg-12">
 							<div class="chart-box">
-								<canvas id="LineChart" height="100px"></canvas>
+								<canvas id="LineChart" height="60px"></canvas>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -129,28 +141,28 @@
 								<canvas id="DoughnutChart" height="100px"></canvas>
 							</div>
 						</div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- /#page-content-wrapper -->
-
+      </div>
     </div>
-    <!-- /#wrapper -->
+    <!-- /#page-content-wrapper -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+  </div>
+  <!-- /#wrapper -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-	
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
 	<!-- Charts.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 	<script src="js/charts.js"></script>
-	
+
 
     <!-- Menu Toggle Script -->
     <script>

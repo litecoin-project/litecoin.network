@@ -14,7 +14,7 @@
 		padding-top: 15px;
 		background: #f1f1f1;
 		height: 100%;
-	}	
+	}
  }
 
 /* TOGGLE STYLES */
@@ -55,7 +55,7 @@
     width: 100%;
     position: absolute;
     padding: 15px;
-	background: #f1f1f1;	
+	background: #f1f1f1;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -75,7 +75,7 @@
 }
 
 .sidebar-nav li {
-    text-indent: 40px;	<-------- Distance between Sidebar text and edge of screen
+    text-indent: 30px;	<-------- Distance between Sidebar text and edge of screen
     line-height: 23px;	<-------- Distance between Sidebar text
 }
 
@@ -83,7 +83,7 @@
     display: block;
     text-decoration: none;
     color: #777777;
-	font-size: 12px;	<-------- List font size
+	font-size: 11.5px;	<-------- List font size
 }
 
 .sidebar-nav li a:hover {
@@ -97,59 +97,45 @@
     text-decoration: none;
 }
 
-.sidebar-nav > .sidebar-brand {
-    height: 30px;		 <-------- height of charts text
-    line-height: 100px;  <-------- height of header text
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #282828;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color:
-    background: 
-}
-
 @media(min-width:320px) {
     #wrapper {
-        padding-left: 230px;	<-------- Distance between chart boxes and sidebar
+    padding-left: 230px;	<-------- Distance between chart boxes and sidebar
 		padding-top: 20px;
     }
 
     #wrapper.toggled {
-        padding-left: 10px;
+    padding-left: 10px;
 		padding-right: 10px;
     }
 
     #sidebar-wrapper {
-        width: 230px;
+    width: 230px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
-        width: 0;
+    width: 0;
     }
 
     #page-content-wrapper {
-        padding: 20px;
-        position: relative;
+    padding: 20px;
+    position: relative;
     }
 
     #wrapper.toggled #page-content-wrapper {
-        position: relative;
-        margin-right: 0;
+    position: relative;
+    margin-right: 0;
     }
 }
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 230px;	<-------- Distance between chart boxes and sidebar
+    padding-left: 220px;	<-------- Distance between chart boxes and sidebar
 		padding-top: 20px;
     }
 
     #wrapper.toggled {
-        padding-left: 10px;
-		padding-right: 10px;
+    padding-left: 0px;
+		padding-right: 0px;
     }
 
     #sidebar-wrapper {
@@ -179,7 +165,7 @@
 		min-height: 55px;
 		margin-bottom: 0;
 		border-radius: 0px;
-		text-indent: 40px;			<-------- Indent of navbar text
+		text-indent: 30px;			<-------- Indent of navbar text
 		position: absolute;
 		display: inline-block;
 	}
@@ -222,40 +208,50 @@
 		border-radius: 0;
 	}
 
-/* Font Attributes */	
-	
-	a:hover {
+/* Font Attributes */
+
+	a{
 		color: #eb646b;
 		text-decoration: none;
 	}
-	
+
+  a:hover {
+		color: #eb646b;
+		text-decoration: none;
+	}
+
 	a:active{
 		color: #eb646b;
 		text-decoration: none;
 	}
-	
+
 	a:visited {
 		color: #eb646b;
 	}
-	
+
 	h1{
 		color: #de4744;
 		font-size: 13px;
 		font-weight: bold;
 	}
-	
+
 	h2{
 		color: #de4744;
 		font-size: 10px;
 		font-weight: bold;
 	}
 
+  text{
+		text-align: center;
+	}
+
 /* Chart Boxes */
 
 	.chart-box{
 		background-color: #fff;
-		padding: 30px;
-		margin-top: 20px;
+		padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 		-webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
 		-ms-transition: all 0.2s ease-in-out;
@@ -264,5 +260,5 @@
 	}
 
 	.chart-box:hover{
-		box-shadow: 0px 0px 18px #ddd;
+		box-shadow: 0px 0px 15px #ddd;
 }

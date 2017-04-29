@@ -1,0 +1,112 @@
+/* =======================================================
+*
+* 	Template Style 
+*	Edit this section
+*
+* ======================================================= */
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #000;
+}
+
+a {
+  color: #1AA59A;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #137971;
+}
+
+.fh5co-container {
+  margin-top: 50px;
+}
+
+.overlay {
+  background: url(../images/404.svg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  z-index: 2;
+}
+.overlay:after, .overlay:before {
+  content: "";
+  background: #ffffff;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  z-index: 10;
+  width: 20px;
+}
+.overlay:before {
+  left: 0;
+}
+.overlay:after {
+  right: 0;
+}
+
+#video {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #video {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #video {
+    height: 200px;
+  }
+}
+
+.fh5co-404-text h2 {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 480px) {
+  .fh5co-404-text h2 {
+    font-size: 18px;
+  }
+}
+
+.fh5co-copyright {
+  margin-top: 50px;
+}
+
+.btn-primary {
+  border: none;
+  background: #1AA59A;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background: #21d1c3 !important;
+}
+
+.js .animate-box {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
