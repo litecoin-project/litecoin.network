@@ -7,7 +7,7 @@ let LineChart = new Chart(CHART, {
     labels: ["January", "February", "March", "April", "May", "June", ],
 		datasets: [
 			{
-				label: "Litecoin Price ($USD)",
+				label: "Market Price ($USD)",
 				fill: false,
 				lineTension: 0.1,
 				backgroundColor: "rgba(75,192,192,0.4)",
@@ -235,7 +235,3 @@ let BubbleChart = new Chart(BUBBLECHART, {
 		]
 	}
 });
-
-
-
-

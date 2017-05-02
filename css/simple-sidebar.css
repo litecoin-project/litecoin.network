@@ -48,7 +48,7 @@
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 200px;
 }
 
 #page-content-wrapper {
@@ -94,7 +94,9 @@
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
-    text-decoration: none;
+    color: #de4744;
+    font-weight: bold;
+    text-decoration: bold;
 }
 
 @media(min-width:320px) {
@@ -104,8 +106,8 @@
     }
 
     #wrapper.toggled {
-    padding-left: 10px;
-		padding-right: 10px;
+    padding-left: 0px;
+		padding-right: 0px;
     }
 
     #sidebar-wrapper {
@@ -225,10 +227,6 @@
 		text-decoration: none;
 	}
 
-	a:visited {
-		color: #eb646b;
-	}
-
 	h1{
 		color: #de4744;
 		font-size: 13px;
@@ -250,8 +248,8 @@
 	.chart-box{
 		background-color: #fff;
 		padding: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 		-webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
 		-ms-transition: all 0.2s ease-in-out;
