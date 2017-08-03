@@ -11,7 +11,7 @@
 
     <title>Litecoin.Network</title>
 
-	<link rel="shortcut icon" href="images/favicon.png">
+	   <link rel="shortcut icon" href="images/favicon.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,12 +34,16 @@
 				<header id="header">
 					<nav class="navbar st-navbar navbar-fixed-top">
 						<div class="navbar-header">
-                <p><a href="#menu-toggle" id="menu-toggle"><img src="images/menu.png" style="height:13px;">
-								<img src="images/logo5.png" align="center" style="height:25px;"></a></p>
-                <a class="style-toggle js-style-toggle" data-style="default" href="#">
-				          <span class="fh5co-circle"></span>
-			          </a>
-					   </div>
+              <ul>
+              <a href="#menu-toggle" id="menu-toggle">
+                <p>
+                  <img src="images/menu.png" style="height:13px;">
+							    <img src="images/logo5.png" align="center" style="height:25px;">
+                </p>
+              </a>
+              <a class="style-toggle js-style-toggle" data-style="default" href="#"></a>
+            </ul>
+          </div>
 					</nav>
 				</header>
 			</div>
@@ -50,21 +54,20 @@
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
           <li>
-					  <h1>Network Statistics</h1>
-					  <a href="#">Orphan Block Count</a>
-					  <a href="#">Transaction Count</a>
-					  <a href="#">Unique Addresses</a>
-					  <a href="#">Blockchain Size</a>
-					  <a href="#">Mempool Size</a>
-					  <a href="#">UXTO Count</a>
-					  <a href="#">Node Count</a>
-            <a href="#">Node agent distribution</a>
-            <a href="#">Mempool Size</a>
-					  <a href="#">Node Map</a>
-            <a href="#">UXTO</a>
-			  	</li>
+            <ul class="filter">
+            <h1>Network Statistics</h1>
+            <a href="#" data-filter=".OrphanBlock">Orphan Block Count</a>
+					  <a href="#" data-filter=".Transactions">Transaction Count</a>
+					  <a href="#" data-filter=".Addresses">Unique Addresses</a>
+					  <a href="#" data-filter=".BlockchainSize">Blockchain Size</a>
+					  <a href="#" data-filter=".mempool">Mempool Size</a>
+					  <a href="#" data-filter=".Nodes">Node Count</a>
+            <a href="#" data-filter=".NodeType">Node agent distribution</a>
+					  <a href="#" data-filter=".NodeMap">Node Map</a>
+            <a href="#" data-filter=".UXTO">UXTO</a>
+          </ul>
 				  <hr>
-				  <li>
+          <ul class="filter">
 					  <h1>Economics</h1>
             <a href="#">Litecoins in Circulation</a>
             <a href="#">Excahnge Volumes ($USD)</a>
@@ -76,9 +79,9 @@
             <a href="#">Block Value ($USD)</a>
             <a href="#">Coins mined daily ($USD)</a>
             <a href="#">Inflation Rate</a>
-				  </li>
+          </ul>
 				  <hr>
-				  <li>
+          <ul class="filter">
 					  <h1>Mining</h1>
             <a href="#">Block Count</a>
             <a href="#">Blocks until halving</a>
@@ -89,17 +92,20 @@
 					  <a href="#">Segwit Support</a>
 					  <a href="#">Avg Block Times</a>
 					  <a href="#">Avg Block Size</a>
-			  	</li>
-          <hr>
-				  <li>
-					  <h1>Development</h1>
-        	  <a href="#">Active Softforks</a>
-				  	</li>
+          </ul>
 				  <hr>
-			  	<li>
-				    <h2>Made with ❤ by</h2>
-            <a href="http://twitter.com/mlpfrank">Franklyn</a>
-            <a href="https://twitter.com/l0sh11">Loshan</a>
+          <ul class="filter">
+					  <h1>Development</h1>
+            <a href="#">Active Softforks</a>
+            <a href="#">Active LIPs</a>
+            <a href="#">Github Commits</a>
+            <a href="#">Testnet</a>
+          </ul>
+				  <hr>
+          <ul>
+				    <a href="https://litecoin-foundation.org/"><img src="images/LF-logo.png" align="center" style="height:25px;"></a>
+          </ul>
+          <br><br><br><br>
           </li>
     	  </ul>
       </div>
@@ -111,38 +117,41 @@
           <div class="col-lg-12">
 						<div class="col-lg-12">
 							<div class="chart-box">
-								<canvas id="LineChart" height="75px"></canvas>
+								<canvas id="LineChart"></canvas>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="chart-box">
-								<canvas id="BarChart" height="150px"></canvas>
+								<canvas id="BarChart"></canvas>
+							</div>
+						</div>
+            <div class="col-lg-6">
+							<div class="chart-box">
+								<canvas id="BubbleChart"></canvas>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="chart-box">
-								<canvas id="PieChart" height="150px"></canvas>
+								<canvas id="PieChart" maxheight="100px"></canvas>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="chart-box">
-								<canvas id="RadarChart" height="150px"></canvas>
+								<canvas id="RadarChart"></canvas>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="chart-box">
-								<canvas id="PolarChart" height="150px"></canvas>
+								<canvas id="PolarChart"></canvas>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="chart-box">
-								<canvas id="BubbleChart" height="150px"></canvas>
+								<canvas id="DoughnutChart"></canvas>
 							</div>
 						</div>
-						<div class="col-lg-6">
-							<div class="chart-box">
-								<canvas id="DoughnutChart" height="150px"></canvas>
-							</div>
+            <div>
+							&nbsp;
 						</div>
           </div>
         </div>
