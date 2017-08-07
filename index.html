@@ -56,28 +56,35 @@
           <li>
             <ul class="filter">
             <h1>Network Statistics</h1>
-            <a href="#" data-filter=".OrphanBlock">Orphan Block Count</a>
-					  <a href="#" data-filter=".Transactions">Transaction Count</a>
-					  <a href="#" data-filter=".Addresses">Unique Addresses</a>
-					  <a href="#" data-filter=".BlockchainSize">Blockchain Size</a>
-					  <a href="#" data-filter=".mempool">Mempool Size</a>
-					  <a href="#" data-filter=".Nodes">Node Count</a>
-            <a href="#" data-filter=".NodeType">Node agent distribution</a>
-					  <a href="#" data-filter=".NodeMap">Node Map</a>
-            <a href="#" data-filter=".UXTO">UXTO</a>
+            <a href="#">Transactions</a>
+					  <a href="#">Unique Addresses</a>
+					  <a href="#">Blockchain Size</a>
+					  <a href="#">Mempool Size</a>
+            <a href="#">Mempool Transactions</a>
+            <a href="#">UXTO</a>
+            <a href="#">Coin Days Destroyed</a>
           </ul>
 				  <hr>
           <ul class="filter">
+            <h1>Nodes</h1>
+            <a href="#">Node Count</a>
+            <a href="#">Node Versions</a>
+            <a href="#">Node Map</a>
+            <a href="#">Node Connections</a>
+            <a href="#">Node Bandwidth</a>
+          </ul>
+          <hr>
+          <ul class="filter">
 					  <h1>Economics</h1>
-            <a href="#">Litecoins in Circulation</a>
+            <a href="#">Litecoin in Circulation</a>
             <a href="#">Excahnge Volumes ($USD)</a>
 					  <a href="#">Market Price ($USD)</a>
+            <a href="#">Market Cap ($USD)</a>
             <a href="#">Avg Transaction Value</a>
             <a href="#">Avg Transaction Fee</a>
-					  <a href="#">Market Cap ($USD)</a>
-				  	<a href="#">Block Reward</a>
+            <a href="#">Unconfirmed Transactions</a>
             <a href="#">Block Value ($USD)</a>
-            <a href="#">Coins mined daily ($USD)</a>
+				  	<a href="#">Block Reward</a>
             <a href="#">Inflation Rate</a>
           </ul>
 				  <hr>
@@ -89,9 +96,11 @@
 					  <a href="#">Hashrate Distribution</a>
 					  <a href="#">Network Hashrate</a>
 					  <a href="#">Network Difficulty</a>
-					  <a href="#">Segwit Support</a>
 					  <a href="#">Avg Block Times</a>
 					  <a href="#">Avg Block Size</a>
+            <a href="#">Block Propergation</a>
+            <a href="#">Est Energy Consumption</a>
+            <a href="#">Orphaned Blocks</a>
           </ul>
 				  <hr>
           <ul class="filter">
@@ -117,37 +126,37 @@
           <div class="col-lg-12">
 						<div class="col-lg-12">
 							<div class="chart-box">
-								<canvas id="LineChart"></canvas>
+								<canvas id="LineChart" height="150px"></canvas>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="chart-box">
-								<canvas id="BarChart"></canvas>
+								<canvas id="BarChart" height="150px"></canvas>
 							</div>
 						</div>
             <div class="col-lg-6">
 							<div class="chart-box">
-								<canvas id="BubbleChart"></canvas>
+								<canvas id="BubbleChart" height="150px"></canvas>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="chart-box">
-								<canvas id="PieChart" maxheight="100px"></canvas>
+								<canvas id="PieChart" height="150px"></canvas>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="chart-box">
-								<canvas id="RadarChart"></canvas>
+								<canvas id="RadarChart" height="150px"></canvas>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="chart-box">
-								<canvas id="PolarChart"></canvas>
+								<canvas id="PolarChart" height="150px"></canvas>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="chart-box">
-								<canvas id="DoughnutChart"></canvas>
+								<canvas id="DoughnutChart" height="150px"></canvas>
 							</div>
 						</div>
             <div>
